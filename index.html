@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #3E5151;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #DECBA4, #3E5151);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        tbody td {
+            border: 3px solid black;
+        }
+
+        #save {
+            border-radius: 50%;
+            border-image: linear-gradient(pink, blue);
+        }
+
+        .userTable {
+
+            border: 2px solid black;
+        }
+
+        img {
+            width: 97px;
+            height: 85px;
+        }
+
+        input {
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .table-div {
+            border: 0px solid black;
+            /* justify-content: center ; */
+            height: 54px;
+            display: flex;
+
+
+        }
+
+        .modal {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- create modal -->
+    <button class="button">Add</button>
+
+    <div class="modal">
+        <form action="" id="userForm">
+            <label for="image">image</label>
+            <input name="" type="text" id="image"><br><br>
+
+            <label for="film">film</label>
+            <input type="text" id="film"><br><br>
+
+            <label for="imdb">film_imdb</label>
+            <input type="imdb" id="film_imdb"><br><br>
+
+            <label for="category">category</label>
+            <select name="" id="category">
+                <option value="dram">dram</option>
+                <option value="fantacstic">fantastic</option>
+                <option value="romantic">romanic</option>
+                <option value="nature">nature</option>
+                <option value="dedectiv">dedectiv</option>
+            </select><br><br>
+
+            <label for="rejisor">rejisor</label>
+            <input type="text" id="rejisor"><br><br>
+            <button class="save">Save</button>
+        </form>
+    </div>
+    <div class="table-div">
+        <table id="userTable" border="2">
+            <tbody>
+                <tr>
+                    <th>Image</th>
+                    <th>Film adi</th>
+                    <th>Film_imdb</th>
+                    <th>Category</th>
+                    <th>Rejisor</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
